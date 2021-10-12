@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 510px;
+  margin-left: 0rem;
+  position: relative;
+  width: 510px;
+  /* border: 1px solid red; */
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.commands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  width: 20rem;
+  border: 1px solid #a1e9bc;
+  /* background-color: #a1e9bc; */
+  color: white;
+}
+
+.commandTitle {
+  font-family: "Montserrat", sans-serif;
+  /* letter-spacing: 1rem; */
+  font-weight: 900;
+}
+
+.commandsText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.game-cell {
+  border: 1px solid white;
+  height: 100px;
+  width: 100px;
+}
+
+.robot {
+  /* padding-top: 1.5rem;
+    height: 20%;
+    margin-left: -2rem; */
+  position: absolute;
+  width: 15%;
+  display: none;
+}
+
+.displayRobot {
+  display: block;
+  position: absolute;
+  width: 15%;
+}
+
+.rotateRight {
+  transform: rotate(90deg);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.rotateLeft {
+  transform: rotate(260deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.inputField {
+  background-color: #02041c;
+  border-bottom: 1px solid white;
+  border: none;
+  margin-top: 5rem;
+  padding: 12px 20px 12px 0px;
+  position: relative;
+  width: 25vw;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.button {
+  background-color: #a1e9bc;
+  border: none;
+  color: #02041c;
+  font-size: 1rem;
+  margin-left: 1rem;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+}
